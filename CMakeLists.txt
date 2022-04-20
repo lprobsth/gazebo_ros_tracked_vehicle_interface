@@ -9,7 +9,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  gazebo
   roscpp
   gazebo_dev
   gazebo_msgs
@@ -17,6 +16,8 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   tf2_ros
 )
+
+find_package(gazebo REQUIRED)
 
 find_package(Boost REQUIRED COMPONENTS thread)
 if (CATKIN_ENABLE_TESTING)
