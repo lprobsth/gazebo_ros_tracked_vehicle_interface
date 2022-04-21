@@ -68,7 +68,7 @@ namespace gazebo
         // but motor joint could later be added...
         gazebo_ros_->getParameterBoolean ( publishOdomTF_, "publishOdomTF", true);
 
-        gazebo_ros_->getParameter<double> ( track_separation_, "wheelSeparation", 0.34 );
+        gazebo_ros_->getParameter<double> ( track_separation_, "tracks_separation", 0.34 );
         gazebo_ros_->getParameter<double> ( update_rate_, "updateRate", 100.0 );
 
         std::map<std::string, OdomSource> odomOptions;
