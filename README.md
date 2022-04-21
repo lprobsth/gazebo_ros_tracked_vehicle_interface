@@ -120,4 +120,4 @@ If the ROS topics of the plugin don't show up, gazebo probably could not find th
 
 ## ToDo's
 
-- [ ] implement the environment hook that exports the GAZEBO_PLUGIN_PATH
+- [x] implement the environment hook that exports the GAZEBO_PLUGIN_PATH
