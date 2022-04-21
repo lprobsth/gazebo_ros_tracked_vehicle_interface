@@ -216,6 +216,10 @@ install(TARGETS ${PROJECT_NAME}
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
 
+## install environment hook for gazebo plugin path
+# catkin_add_env_hooks (models_env SHELLS bash tcsh zsh DIRECTORY $ {CMAKE_CURRENT_SOURCE_DIR}/env-hooks)
+catkin_add_env_hooks (gz_plugins_env SHELLS bash DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/env_hooks)
+
 #############
 ## Testing ##
 #############
